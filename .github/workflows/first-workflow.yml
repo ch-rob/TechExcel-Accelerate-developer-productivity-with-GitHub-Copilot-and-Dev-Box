@@ -1,7 +1,10 @@
 name: First Workflow
 
 on:
-  workflow_dispatch:
+  workflow_dispatch
+
+env:
+  targetEnv: dev
 
 jobs:
   job1:
