@@ -30,6 +30,6 @@ jobs:
       uses: azure/arm-deploy@v1
       with:
         subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-        resourceGroupName: ${{ secrets.AZURE_RG }}
+        resourceGroupName: "crv-techexcel-iac"
         template: ./src/InfrastructureAsCode/main.bicep
         parameters: environment=${{ env.targetEnv }}
