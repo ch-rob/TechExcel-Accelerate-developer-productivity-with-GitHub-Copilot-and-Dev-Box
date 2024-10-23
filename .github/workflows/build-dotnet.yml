@@ -81,6 +81,7 @@ jobs:
       name: dev
       url: https://hzpm4gw2233xe-dev.azurewebsites.net/
     
+    # CRV: Upgrade to 2.3.0 per https://github.com/Azure/login?tab=readme-ov-file#login-with-openid-connect-oidc-recommended
     steps:
       - name: 'Login via Azure CLI'
         uses: azure/login@v2.3.0
